@@ -1495,7 +1495,10 @@ int main(int argc, char **argv)
 }
 ```
 ## Output:
+![WhatsApp Image 2023-06-14 at 12 58 53](https://github.com/kathiravan13/PCA-Simple-warp-divergence---Implement-Sum-Reduction./assets/119831303/46e3aa4f-6b44-44ec-8984-63cfd2b35c5d)
+
 ```
+The time taken by the kernel reduceUnrolling16 is comparatively less to the kernal reduceUnrolling8 as each thread in the kernel reduceUnrolling16 handles 16 data blocks.
 ```
 
 ## Result:
