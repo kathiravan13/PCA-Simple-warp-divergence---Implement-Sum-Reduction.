@@ -4,9 +4,7 @@ Refer to the kernel reduceUnrolling8 and implement the kernel reduceUnrolling16,
 ## Aim:
 PCA-Simple-warp-divergence---Implement-Sum-Reduction. Refer to the kernel reduceUnrolling8 and implement the kernel reduceUnrolling16, in which each thread handles 16 data blocks. Compare kernel performance with reduceUnrolling8 and use the proper metrics and events with nvprof to explain any difference in performance.
 
-
 ## Procedure:
-Procedure:
 Step 1 : Include the required files and library.
 
 Step 2 : Introduce a function named 'recursiveReduce' to implement Interleaved Pair Approach and function 'reduceInterleaved' to implement Interleaved Pair with less divergence.
@@ -26,22 +24,18 @@ Step 8 : Atlast , free the host and device memory then reset the device and chec
 
 
 
-##PROGRAM:
+## PROGRAM:
 ```
 kernel reduceUnrolling8
 Name : KATHIRAVAN.P
 Reg No : 212222230063
-
+```
+## kernel reduceUnrolling8
+```
 #include "common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
 
-/*
- * This code implements the interleaved and neighbor-paired approaches to
- * parallel reduction in CUDA. For this example, the sum operation is used. A
- * variety of optimizations on parallel reduction aimed at reducing divergence
- * are also demonstrated, such as unrolling.
- */
 
 // Recursive Implementation of Interleaved Pair Approach
 int recursiveReduce(int *data, int const size)
@@ -724,7 +718,9 @@ int main(int argc, char **argv)
 
     return EXIT_SUCCESS;
 }
-kernel reduceUnrolling16
+```
+## kernel reduceUnrolling16:
+```
 Name : Tharun kumar.M
 Reg No : 212222100056
 
@@ -1497,6 +1493,10 @@ int main(int argc, char **argv)
 
     return EXIT_SUCCESS;
 }
+```
 ## Output:
+```
+```
 
 ## Result:
+Implementation of the kernel reduceUnrolling16 is done and the performance of kernal reduceUnrolling16 is comapared with kernal reduceUnrolling8 using proper metrics and events with nvprof.
